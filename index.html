@@ -66,11 +66,23 @@
         .flower2 { bottom: -10px; right: -10px; }
         .flower3 { top: -10px; right: -10px; }
         .flower4 { bottom: -10px; left: -10px; }
+        .img-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+            gap: 20px; /* Espaçamento entre as imagens */
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+}
+
         .img-container img {
-            width: 50%;
+            width: 100%; /* Ajusta para ocupar toda a célula do grid */
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
+}
+
+        
     </style>
 </head>
 <body>
@@ -103,9 +115,11 @@
     <section id="midia">
         <h2>Imagens e Vídeos</h2>
         <div class="img-container">
-            <img src="image.png" alt="Imagem do projeto">
+            <img src="login.png" alt="Imagem do projeto">  <img src="menu.png" alt="Imagem do projeto">
+            <img src="cardapio.png" alt="Imagem do projeto">  <img src="cadastroprato.png" alt="Imagem do projeto">
+            <img src="registrarpedido.png" alt="Imagem do projeto"> <img src="relatoriopedidos.png" alt="Imagem do projeto">
         </div>
-        <p><a href="#">▶️ Assistir vídeo no YouTube</a></p>
+        <p><a href="apresentação projeto.mp4">▶️ Assistir vídeo no YouTube</a></p>
     </section>
     <section id="links">
         <h2>Links</h2>
