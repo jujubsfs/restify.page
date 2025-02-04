@@ -6,59 +6,70 @@
     <title>Restify - Página do Projeto</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap');
+        
         body {
             background-color: #6b752f;
             color: #fff;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
+            margin: 0;
+            padding: 0;
             position: relative;
-            overflow: hidden;
+            min-height: 100vh; /* Garante que a página tenha no mínimo a altura da tela */
         }
         header {
             padding: 20px;
+            font-family: 'Pacifico', cursive;
+            font-size: 2em;
+            color: #ffcc00;
         }
         section {
-            margin: 20px;
+            margin: 20px auto;
             padding: 20px;
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
+            border-radius: 15px;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        h1, h2 {
-            font-family: 'Courier New', Courier, monospace;
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #ffcc00;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
-        a {
-            color: #ffcc00;
+        a, .btn {
+            display: inline-block;
+            background: #ffcc00;
+            color: #6b752f;
+            padding: 10px 15px;
+            margin: 10px;
             text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
         }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
+        a:hover, .btn:hover {
+            background: #ffd633;
         }
         .flower {
             position: absolute;
-            width: 150px;
+            width: 120px;
+            opacity: 0.8;
         }
-        .flower1 {
-            top: -20px;
-            left: -20px;
-        }
-        .flower2 {
-            bottom: -20px;
-            right: -20px;
-        }
-        .flower3 {
-            top: -20px;
-            right: -20px;
-        }
-        .flower4 {
-            bottom: -20px;
-            left: -20px;
+        .flower1 { top: -10px; left: -10px; }
+        .flower2 { bottom: -10px; right: -10px; }
+        .flower3 { top: -10px; right: -10px; }
+        .flower4 { bottom: -10px; left: -10px; }
+        .img-container img {
+            width: 50%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -68,34 +79,35 @@
     <img src="flower.png" class="flower flower3" alt="Flor">
     <img src="flower.png" class="flower flower4" alt="Flor">
     <header>
-        <h1>Restify</h1>
+        Restify
         <p>Um sistema inteligente para otimizar a gestão de restaurantes.</p>
     </header>
     <section id="sobre">
         <h2>Sobre o Projeto</h2>
-        <p>O Restify é um sistema de gestão de restaurantes desenvolvido para auxiliar proprietários e administradores a monitorar e analisar o desempenho do seu estabelecimento. A plataforma permite acompanhar os pratos mais vendidos, os menos vendidos e as quantidades comercializadas, oferecendo uma visão detalhada sobre as entradas e saídas do restaurante. Com essa análise, os gestores podem tomar decisões estratégicas para otimizar o cardápio, reduzir desperdícios e aumentar a lucratividade do negócio.</p>
+        <p>O Restify é um sistema de gestão de restaurantes desenvolvido para auxiliar proprietários e administradores a monitorar e analisar o desempenho do seu estabelecimento...</p>
     </section>
     <section id="funcionalidades">
         <h2>Principais Funcionalidades</h2>
         <ul>
-            <li>Gerenciamento de receitas</li>
-            <li>Cadastro e login de usuários</li>
-            <li>Lista de ingredientes</li>
-            <li>Modo de preparo interativo</li>
+            <li>🔑 Cadastro e login de usuários</li>
+            <li>👨‍🍳 Cardápio</li>
+            <li>📊 Gerenciamento de pratos</li>
+            <li>📊 Gerenciamento de pedidos</li>
+            <li>📋 Lista com a estatística de vendas</li>
         </ul>
     </section>
     <section id="midia">
         <h2>Imagens e Vídeos</h2>
-        <img src="image.png" alt="Imagem do projeto" width="300px">
-        <p><a href="#">Link para vídeo no YouTube</a></p>
+        <div class="img-container">
+            <img src="image.png" alt="Imagem do projeto">
+        </div>
+        <p><a href="#">▶️ Assistir vídeo no YouTube</a></p>
     </section>
     <section id="links">
         <h2>Links</h2>
-        <ul>
-            <li><a href="#">Código no GitHub</a></li>
-            <li><a href="#">Relatório</a></li>
-            <li><a href="#">Vídeo no YouTube</a></li>
-        </ul>
+        <a href="#" class="btn">📂 Código no GitHub</a>
+        <a href="#" class="btn">📄 Relatório</a>
+        <a href="#" class="btn">🎥 Vídeo no YouTube</a>
     </section>
     <footer>
         <p>&copy; 2025 Restify - Todos os direitos reservados.</p>
